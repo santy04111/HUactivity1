@@ -1,4 +1,4 @@
-package Entities;
+package com.example.Santiago.HUactivity.Entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
@@ -9,7 +9,7 @@ import java.util.Objects;
 
 @Embeddable
 public class CustomercustomerdemographicId implements Serializable {
-    private static final long serialVersionUID = 991632060395081310L;
+    private static final long serialVersionUID = -1871072819212612209L;
     @Column(name = "customerid", nullable = false, length = 5)
     private String customerid;
 

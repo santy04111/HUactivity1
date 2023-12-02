@@ -1,4 +1,4 @@
-package Entities;
+package com.example.Santiago.HUactivity.Entities;
 
 import jakarta.persistence.*;
 
@@ -7,6 +7,8 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "orderdetail")
 public class Orderdetail {
+
+
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "orderid", nullable = false)
     private Salesorder orderid;
@@ -23,6 +25,19 @@ public class Orderdetail {
 
     @Column(name = "discount", nullable = false, precision = 10, scale = 2)
     private BigDecimal discount;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "id", nullable = false)
+    private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public Salesorder getOrderid() {
         return orderid;

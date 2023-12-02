@@ -1,7 +1,7 @@
-package Controllers;
+package com.example.Santiago.HUactivity.Controllers;
 
-import Entities.Employee;
-import Services.EmployeeService;
+import com.example.Santiago.HUactivity.Entities.Employee;
+import com.example.Santiago.HUactivity.Services.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

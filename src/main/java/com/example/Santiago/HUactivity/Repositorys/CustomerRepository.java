@@ -1,6 +1,6 @@
-package Repositorys;
+package com.example.Santiago.HUactivity.Repositorys;
 
-import Entities.Customer;
+import com.example.Santiago.HUactivity.Entities.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

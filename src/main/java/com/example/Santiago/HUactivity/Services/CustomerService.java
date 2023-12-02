@@ -1,7 +1,7 @@
-package Services;
+package com.example.Santiago.HUactivity.Services;
 
-import Entities.Customer;
-import Repositorys.CustomerRepository;
+import com.example.Santiago.HUactivity.Entities.Customer;
+import com.example.Santiago.HUactivity.Repositorys.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

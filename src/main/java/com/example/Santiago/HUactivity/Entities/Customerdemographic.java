@@ -1,4 +1,4 @@
-package Entities;
+package com.example.Santiago.HUactivity.Entities;
 
 import jakarta.persistence.*;
 

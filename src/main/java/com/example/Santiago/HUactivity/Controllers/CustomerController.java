@@ -1,7 +1,7 @@
-package Controllers;
+package com.example.Santiago.HUactivity.Controllers;
 
-import Entities.Customer;
-import Services.CustomerService;
+import com.example.Santiago.HUactivity.Entities.Customer;
+import com.example.Santiago.HUactivity.Services.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
