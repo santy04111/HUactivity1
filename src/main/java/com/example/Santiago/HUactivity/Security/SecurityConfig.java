@@ -41,7 +41,8 @@ public class SecurityConfig {
         return httpSecurity
                 .csrf(config -> config.disable())
                 .authorizeHttpRequests(auth -> {
-                    auth.requestMatchers("/createUser","/swagger-ui.html", "/v2/api-docs", "/webjars/**", "/swagger-resources/**").permitAll();
+                    auth.requestMatchers("/api/products/obtenerproducto{id}","/createUser","/swagger-ui.html", "/v2/api-docs", "/webjars/**", "/swagger-resources/**").permitAll();
+                    auth.requestMatchers("/deleteUser").hasRole("ADMIN");
                     auth.anyRequest().authenticated();
                 })
                 .sessionManagement(session -> {

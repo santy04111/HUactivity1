@@ -55,7 +55,7 @@ public class SingUpController {
         return ResponseEntity.ok(userEntity);
     }
 
-    @DeleteMapping("/deleteUser")
+    @DeleteMapping("/deleteUser/{id}")
     public String deleteUser(@RequestParam String id){
         userRepository.deleteById(Long.parseLong(id));
         return "Se ha borrado el user con id".concat(id);
